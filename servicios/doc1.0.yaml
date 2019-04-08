@@ -1,0 +1,107 @@
+---
+swagger: "2.0"
+info:
+  version: "2018-09-25T20:14:32Z"
+  title: "PCSA"
+host: "km29vlujn4.execute-api.us-east-2.amazonaws.com"
+basePath: "/api"
+schemes:
+- "https"
+paths:
+  /compras/v0/proveedores:
+    post:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "TokenId"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+      security:
+      - registro-proveedor: []
+  /productos/v0:
+    get:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "TokenId"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+      security:
+      - registro-proveedor: []
+    post:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "TokenId"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+      security:
+      - registro-proveedor: []
+    patch:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "TokenId"
+        in: "header"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+      security:
+      - registro-proveedor: []
+  /proveedores/v0:
+    post:
+      produces:
+      - "application/json"
+      parameters:
+      - name: "TokenId"
+        in: "header"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+      security:
+      - registro-proveedor: []
+  /users/v0/clientes:
+    post:
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+securityDefinitions:
+  registro-proveedor:
+    type: "apiKey"
+    name: "TokenId"
+    in: "header"
+    x-amazon-apigateway-authtype: "cognito_user_pools"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
