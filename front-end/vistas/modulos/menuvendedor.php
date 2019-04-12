@@ -6,7 +6,7 @@
 
 			<li class="active">
 
-				<a href="inicio">
+				<a href="?ruta=inicio.php">
 
 					<i class="fa fa-home"></i>
 					<span>Inicio</span>
@@ -35,7 +35,7 @@
 					
 					<li>
 
-						<a href="usuariosindividual">
+						<a href="?ruta=usuariosindividual">
 							
 							<i class="fa fa-user"></i>
 							<span>Individual</span>
@@ -46,7 +46,7 @@
 
 					<li>
 
-						<a href="usuariosempresa">
+						<a href="?ruta=usuariosempresa">
 							
 							<i class="fa fa-building-o"></i>
 							<span>Empresa</span>

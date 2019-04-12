@@ -1,3 +1,9 @@
+﻿ <?php 
+
+	define('RUTA', 'http://localhost:8080/WebApplicationPCSA/front-end/');		
+
+  ?>
+
  <header class="main-header">
  	
 	<!--=====================================
@@ -59,7 +65,7 @@
 							
 							<div class="pull-right">
 								
-								<a href="salir" class="btn btn-default btn-flat">Salir</a>
+								<a href=<?php echo RUTA . "vistas/modulos/salir.php" ?> class="btn btn-default btn-flat">Salir</a>
 
 							</div>
 

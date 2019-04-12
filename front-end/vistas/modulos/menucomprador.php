@@ -6,7 +6,7 @@
 
 			<li class="active">
 
-				<a href="inicio">
+				<a href="?ruta=inicio">>
 
 					<i class="fa fa-home"></i>
 					<span>Inicio</span>
@@ -17,7 +17,7 @@
 
 			<li>
 
-				<a href="usuariosproveedor">
+				<a href="?ruta=usuariosproveedor">>
 
 					<i class="fa fa-truck"></i>
 					<span>Registro de Proveedores</span>
@@ -28,7 +28,7 @@
 
 			<li>
 
-				<a href="compras">
+				<a href="?ruta=compras"?>>
 
 					<i class="fa fa-edit"></i>
 					<span>Registro de Compras</span>
@@ -39,7 +39,7 @@
 
 			<li>
 
-				<a href="productos">
+				<a href="?ruta=productos"?>>
 
 					<i class="fa fa-book"></i>
 					<span>Agregar Productos</span>
@@ -50,7 +50,7 @@
 
 			<li>
 
-				<a href="precioVenta">
+				<a href="?ruta=precioVenta"?>>
 
 					<i class="fa fa-money"></i>
 					<span>Registrar Precio de Venta</span>
@@ -61,7 +61,7 @@
 
 			<li>
 
-				<a href="movimientos">
+				<a href="?ruta=movimientos"?>>
 
 					<i class="fa fa-exchange"></i>
 					<span>Movimientos en Almacen</span>
